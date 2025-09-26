@@ -1,6 +1,6 @@
 # Gatherly
 
-Gatherly is a simple, dark-mode web platform that helps users find, explore, and join local events based on their interests and location. Users can browse events, filter by type/date/location, RSVP to join, and even create their own events.
+Gatherly is a simple web platform that helps users find, explore, and join local events based on their interests and location. Users can browse events, filter by type/date/location, RSVP to join, and even create their own events.
 
 ## 🚀 Features
 - **Browse Events** – Explore a curated list of events with a clean grid layout.
@@ -8,11 +8,10 @@ Gatherly is a simple, dark-mode web platform that helps users find, explore, and
 - **Event Details** – View event descriptions, host, date, and location.
 - **RSVP / Join** – Quickly RSVP and get a confirmation.
 - **Host Events** – Create new events with validation using a simple form.
-- **Dark Mode UI** – Sleek, modern design powered by Tailwind CSS.
 
 ## 🛠️ Tech Stack
 - **React.js + TypeScript** – Component-based, strongly typed frontend.
-- **Tailwind CSS** – Utility-first styling with dark-mode enabled.
+- **Tailwind CSS** – Utility-first styling.
 - **React Router** – Client-side routing for a smooth SPA experience.
 - **React Hook Form** – Lightweight form validation.
 
@@ -25,7 +24,7 @@ Gatherly is a simple, dark-mode web platform that helps users find, explore, and
 ### Steps
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/gatherly.git
+   git clone https://github.com/Shreshth-Srivastava/Gatherly.git
    cd gatherly
    ```
 
