@@ -4,7 +4,7 @@ import type { EventItem } from "../data/events";
 
 export default function EventCard({ event }: { event: EventItem }) {
   return (
-    <article className="card flex flex-col gap-3">
+    <article className="card flex flex-col gap-3 bg-[var(--light-black)] p-4 rounded">
       <div className="flex items-start justify-between">
         <div>
           <h3 className="text-lg font-semibold">{event.title}</h3>
@@ -16,7 +16,7 @@ export default function EventCard({ event }: { event: EventItem }) {
           <div className="font-medium">{event.date}</div>
           <Link
             to={`/event/${event.id}`}
-            className="mt-2 inline-block text-xs px-3 py-1 rounded-md bg-accent/20 text-accent"
+            className="mt-2 inline-block text-xs px-3 py-1 rounded-md bg-accent/20 text-accent bg-blue-500 hover:bg-blue-600"
           >
             Details
           </Link>

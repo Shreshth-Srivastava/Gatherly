@@ -16,12 +16,12 @@ export default function App() {
     <div className="min-h-screen p-6">
       <header className="flex items-center justify-between mb-6">
         <Link to="/" className="text-2xl font-semibold text-white">
-          LocalEvents
+          Gatherly
         </Link>
         <nav className="flex gap-3 items-center">
           <Link
             to="/create"
-            className="px-3 py-2 rounded-lg bg-accent/20 text-accent"
+            className="px-3 py-2 rounded bg-accent/20 text-accent bg-blue-500 hover:bg-blue-600 p-2"
           >
             Host an event
           </Link>

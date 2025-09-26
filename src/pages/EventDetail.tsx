@@ -11,7 +11,7 @@ export default function EventDetail({ events }: { events: EventItem[] }) {
   if (!event) return <div className="card">Event not found</div>;
 
   return (
-    <div className="card max-w-3xl">
+    <div className="card py-4">
       <div className="flex items-start justify-between mb-4">
         <div>
           <h1 className="text-2xl font-bold">{event.title}</h1>
@@ -39,13 +39,13 @@ export default function EventDetail({ events }: { events: EventItem[] }) {
             setJoined(true);
             setTimeout(() => navigate(`/`), 1200);
           }}
-          className="px-4 py-2 rounded-lg bg-accent text-black font-semibold"
+          className="px-4 py-2 rounded-lg bg-accent font-semibold bg-green-600 hover:bg-green-700 cursor-pointer"
         >
           RSVP / Join
         </button>
         <button
           onClick={() => navigate("/")}
-          className="px-4 py-2 rounded-lg border border-white/10"
+          className="px-4 py-2 rounded-lg border border-white/10 cursor-pointer hover:border-white"
         >
           Back
         </button>

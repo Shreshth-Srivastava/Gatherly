@@ -7,7 +7,8 @@ const TYPES: EventType[] = [
   "Sports",
   "Meetup",
   "Fitness",
-  "Other",
+  "Social",
+  "Entertainment",
 ];
 
 export default function Filters({
@@ -27,7 +28,9 @@ export default function Filters({
           onChange={(e) => onTypeChange(e.target.value)}
           className="mt-1 w-full rounded-lg bg-bg/50 p-2"
         >
-          <option value="" className="bg-black">All</option>
+          <option value="" className="bg-black">
+            All
+          </option>
           {TYPES.map((t) => (
             <option key={t} value={t} className="bg-black">
               {t}
