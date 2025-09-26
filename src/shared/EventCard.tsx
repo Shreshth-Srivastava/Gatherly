@@ -1,0 +1,32 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import type { EventItem } from "../data/events";
+
+export default function EventCard({ event }: { event: EventItem }) {
+  return (
+    <article className="card flex flex-col gap-3">
+      <div className="flex items-start justify-between">
+        <div>
+          <h3 className="text-lg font-semibold">{event.title}</h3>
+          <div className="text-sm text-muted">
+            {event.type} • {event.location}
+          </div>
+        </div>
+        <div className="text-right text-sm">
+          <div className="font-medium">{event.date}</div>
+          <Link
+            to={`/event/${event.id}`}
+            className="mt-2 inline-block text-xs px-3 py-1 rounded-md bg-accent/20 text-accent"
+          >
+            Details
+          </Link>
+        </div>
+      </div>
+      <p className="text-sm text-muted line-clamp-3">{event.description}</p>
+      <div className="flex items-center justify-between text-xs text-muted">
+        <div>Host: {event.host}</div>
+        <div className="italic">ID: {event.id}</div>
+      </div>
+    </article>
+  );
+}
