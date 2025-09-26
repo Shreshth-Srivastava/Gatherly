@@ -1,73 +1,77 @@
-# React + TypeScript + Vite
+# Gatherly
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Gatherly is a simple, dark-mode web platform that helps users find, explore, and join local events based on their interests and location. Users can browse events, filter by type/date/location, RSVP to join, and even create their own events.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **Browse Events** – Explore a curated list of events with a clean grid layout.
+- **Filter & Search** – Filter events by type, date, and location.
+- **Event Details** – View event descriptions, host, date, and location.
+- **RSVP / Join** – Quickly RSVP and get a confirmation.
+- **Host Events** – Create new events with validation using a simple form.
+- **Dark Mode UI** – Sleek, modern design powered by Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+- **React.js + TypeScript** – Component-based, strongly typed frontend.
+- **Tailwind CSS** – Utility-first styling with dark-mode enabled.
+- **React Router** – Client-side routing for a smooth SPA experience.
+- **React Hook Form** – Lightweight form validation.
 
-## React Compiler
+## 📦 Installation & Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
+- Node.js 18 or newer
+- npm or yarn package manager
 
-## Expanding the ESLint configuration
+### Steps
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/gatherly.git
+   cd gatherly
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+3. **Run development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+   Open the local dev URL shown in the terminal (usually `http://localhost:5173`).
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+   To preview the production build locally:
+   ```bash
+   npm run preview
+   ```
+
+## 📂 Project Structure
+```
+src/
+├── App.tsx           # Main app + routes
+├── data/events.ts    # Sample event data
+├── pages/            # Explore, EventDetail, CreateEvent pages
+├── shared/           # Reusable components (Filters, EventCard)
+├── index.css         # Tailwind + global styles
+└── main.tsx          # Entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔮 Future Enhancements
+- Persist events in **localStorage** or connect to a real API
+- Add user authentication for event hosting
+- Support RSVP lists & attendee counts
+- Infinite scroll or pagination for larger event lists
+- Add animations with Framer Motion
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🖤 License
+MIT – free to use, modify, and share.
