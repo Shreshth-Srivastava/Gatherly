@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import type { EventType } from "../data/events";
 
 const TYPES: EventType[] = [
@@ -26,7 +26,7 @@ export default function Filters({
         <label className="block text-sm">Type</label>
         <select
           onChange={(e) => onTypeChange(e.target.value)}
-          className="mt-1 w-full rounded-lg bg-bg/50 p-2"
+          className="mt-1 w-full rounded-lg bg-bg/50 p-2 border-2 border-[hsl(0,0%,50%)]"
         >
           <option value="" className="bg-black">
             All
@@ -44,7 +44,7 @@ export default function Filters({
         <input
           onChange={(e) => onLocationChange(e.target.value)}
           placeholder="City or area"
-          className="mt-1 w-full rounded-lg bg-bg/50 p-2"
+          className="mt-1 w-full rounded-lg bg-bg/50 p-2 border-2 border-[hsl(0,0%,50%)]"
         />
       </div>
 
@@ -53,7 +53,7 @@ export default function Filters({
         <input
           onChange={(e) => onDateChange(e.target.value)}
           type="date"
-          className="mt-1 w-full rounded-lg bg-bg/50 p-2"
+          className="mt-1 w-full rounded-lg bg-bg/50 p-2 border-2 border-[hsl(0,0%,50%)]"
         />
       </div>
     </div>

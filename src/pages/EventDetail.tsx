@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import type { EventItem } from "../data/events";
 
@@ -11,7 +11,7 @@ export default function EventDetail({ events }: { events: EventItem[] }) {
   if (!event) return <div className="card">Event not found</div>;
 
   return (
-    <div className="card py-4">
+    <div className="card p-4 bg-[var(--light-black)] rounded">
       <div className="flex items-start justify-between mb-4">
         <div>
           <h1 className="text-2xl font-bold">{event.title}</h1>

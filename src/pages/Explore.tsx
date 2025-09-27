@@ -1,5 +1,5 @@
-import React, { useMemo, useState } from "react";
-import type { EventItem, EventType } from "../data/events";
+import { useMemo, useState } from "react";
+import type { EventItem } from "../data/events";
 import EventCard from "../shared/EventCard";
 import Filters from "../shared/Filters";
 

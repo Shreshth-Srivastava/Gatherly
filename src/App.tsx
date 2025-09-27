@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Routes, Route, Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { Routes, Route, Link } from "react-router-dom";
 import Explore from "./pages/Explore";
 import EventDetail from "./pages/EventDetail";
 import CreateEvent from "./pages/CreateEvent";
