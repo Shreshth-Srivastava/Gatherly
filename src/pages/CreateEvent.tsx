@@ -28,7 +28,7 @@ export default function CreateEvent({ onCreate }: { onCreate: (e: EventItem) => 
           {errors.description && <div className="text-xs text-red-400 mt-1">Description minimum 10 chars</div>}
         </div>
 
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-rows-3 md:grid-cols-3 gap-3">
           <div>
             <label className="block text-sm">Date</label>
             <input {...register('date', { required: true })} type="date" className="mt-1 w-full rounded-lg bg-bg/50 p-2 border-2 border-[hsl(0,0%,50%)]" />
