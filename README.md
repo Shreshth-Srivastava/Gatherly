@@ -2,6 +2,8 @@
 
 Gatherly is a simple web platform that helps users find, explore, and join local events based on their interests and location. Users can browse events, filter by type/date/location, RSVP to join, and even create their own events.
 
+Live project link: https://gatherly-eight.vercel.app/
+
 ## 🚀 Features
 - **Browse Events** – Explore a curated list of events with a clean grid layout.
 - **Filter & Search** – Filter events by type, date, and location.
